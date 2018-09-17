@@ -19,7 +19,7 @@ var app = express();
 console.log("Expressed");
 
 // Sets an initial port. We"ll use this later in our listener
-var PORT = 8080;
+var PORT = process.env.PORT||8080;
 
 // // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: true }));
